@@ -1,0 +1,257 @@
+/* ПЕРЕМЕННЫЕ */
+:root {
+  --pink: #FF6EFD;
+  --blue: #1C39FF;
+  --yellow: #FED700;
+  --white: #FFF;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--blue);
+  max-width: 1920px;
+  width: 100%;
+}
+* {
+  /* cursor: none; */
+}
+/* СТИЛЬ КУРСОРА   */
+.cursor {
+  opacity: 0%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FD4E2B;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.1s ease-out, height 0.1s ease-out, opacity 0.1s;
+}
+/* СТИЛИ ТЕКСТА */
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-size: 128px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+p {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 20px;
+}
+/* ЗАГОЛОВОК */
+.name {
+  margin: 1.56% 0 0 5.2%;
+  color: var(--white);
+}
+/* НАКЛЕЙКА СИНТЕЗ НОВОГО РАСТЕНИЯ */
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 326px;
+  height: 70px;
+  border-radius: 50px;
+  background: var(--yellow);
+  color: var(--blue);
+  transform: rotate(-15deg);
+  left: 44%;
+  margin-top: 5%;
+  z-index: 2;
+}
+.vertical {
+  height: 115px;
+  width: 0;
+  margin-left: 0.62%;
+  margin-top: 30px;
+  border: 5px solid var(--white);
+}
+/* БЛОК С ВЕРТИКАЛЬНЫМ РАСПОЛОЖЕНИЕМ */
+.block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.two {
+  align-items: center;
+}
+.three {
+  margin-top: 45px;
+}
+/* ГРАФИК */
+.sine {
+  width: 23.13%;
+  margin-left: 3.44%;
+  margin-top: 30px;
+}
+/* МЕНЮ */
+.menu {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  background: var(--yellow);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.menu img {
+  width: 44px;
+  height: 44px;
+}
+.line {
+  width: 38%;
+  margin-left: 5.2%;
+  border: 5px solid var(--white);
+}
+.s {
+  width: 31.82%;
+  margin-left: 19.69%;
+}
+/* ПРЯМОУГОЛЬНИК ЦВЕТ */
+.rectangle {
+  width: 560px;
+  height: 265px;
+  background: var(--white);
+  margin-left: 5.21%;
+  margin-top: 2.76%;
+}
+.oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 559px;
+  height: 265px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+/* НАКЛЕЙКА ЦВЕТ */
+.color {
+  position: absolute;
+  left: 24.48%;
+}
+/* ПРЯМОУГОЛЬНИК ФОРМА */
+.rectangle2 {
+  display: flex;
+  align-items: center;
+  width: 559px;
+  height: 265px;
+  background: var(--white);
+  border-radius: 133px;
+  margin-left: 5.21%;
+  margin-top: 2.76%;
+  z-index: 5;
+}
+/* ЗАГОЛОВОК ФОРМА */
+.rectangle2 h2 {
+  color: var(--blue);
+  margin-left: 20%;
+}
+/* НАКЛЕЙКА ФОРМА */
+.shape {
+  margin-left: 10%;
+}
+.rectangle3 {
+  width: 400px;
+  height: 265px;
+  background: var(--white);
+  margin-left: -200px;
+  margin-top: 2.76%;
+  transform: rotate(180deg);
+}
+.rectangle4 {
+  width: 559px;
+  height: 265px;
+  background: var(--blue);
+  border-radius: 133px;
+}
+/* ВТОРОЙ ОБРЕЗАННЫЙ ПРЯМОУГОЛЬНИК */
+.row {
+  z-index: -2;
+  margin-left: -250px;
+}
+/* ТРЕТИЙ ОБРЕЗАННЫЙ ПРЯМОУГОЛЬНИК */
+.row2 {
+  z-index: -3;
+  margin-left: -280px;
+}
+/* СИНТЕЗ */
+.synthesis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 560px;
+  height: 266px;
+  margin-left: 5.21%;
+  margin-top: 45px;
+  background: var(--blue);
+  border: 3px solid var(--white);
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.el1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 159px;
+  height: 266px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.el2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 286px;
+  height: 266px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.el3 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 427px;
+  height: 266px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.el4 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 559px;
+  height: 266px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.kv1 {
+  height: 256px;
+  width: 0;
+  border: 3px solid var(--white);
+}
+.kv2 {
+  height: 256px;
+  width: 0;
+  border: 3px solid var(--white);
+  margin-left: 127px;
+}
+.kv3 {
+  height: 256px;
+  width: 0;
+  border: 3px solid var(--white);
+  margin-left: 127px;
+}
+.synthesis img {
+  position: absolute;
+  left: 470px;
+  z-index: 2;
+}
