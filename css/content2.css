@@ -1,0 +1,64 @@
+/* ПЕРЕМЕННЫЕ */
+:root {
+  --pink: #FF6EFD;
+  --blue: #1C39FF;
+  --yellow: #FED700;
+  --white: #FFF;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--blue);
+  max-width: 1920px;
+  width: 100%;
+}
+/* СТИЛИ ТЕКСТА */
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-size: 128px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+/* СТИЛИ БЛОКОВ */
+.color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* БУКВЫ В БЛОКЕ */
+.letter {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 22px;
+  gap: 10px;
+  width: 100px;
+  height: 175px;
+  background: #7284FF;
+  color: var(--white);
+  border: 2px solid #000000;
+  margin: 0px -2px;
+}
+/* КВАДРАТЫ В БЛОКЕ */
+.rectangle {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #7284FF;
+  border: 2px solid #000000;
+  margin: 0 0;
+}
